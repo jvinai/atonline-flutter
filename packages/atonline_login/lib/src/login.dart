@@ -863,7 +863,7 @@ class AtOnlineLoginPageBodyState extends State<AtOnlineLoginPageBody> {
     widgets.add(
       DropdownButtonFormField<String>(
         key: Key(field["name"]),
-        initialValue: currentValue.isNotEmpty ? currentValue : null,
+        value: currentValue.isNotEmpty ? currentValue : null,
         decoration: InputDecoration(
           labelText: field["label"] ?? "Select",
         ),
